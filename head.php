@@ -24,7 +24,7 @@ if (file_exists($configPath)) {
 </nav>
 </div>
 
-<h1>Planning app</h1>
+<h1>Planning app </h1>
 
 
 <!-- hier komt informatie over de website en waarvoor hij bedoelt is -->
