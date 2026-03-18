@@ -1,4 +1,15 @@
-<?php require_once __DIR__ . '/backend/config.php'; ?>
+<?php
+$configPath = __DIR__ . '/backend/config.php';
+$configExamplePath = __DIR__ . '/backend/config.example.php';
+
+if (file_exists($configPath)) {
+	require_once $configPath;
+} elseif (file_exists($configExamplePath)) {
+	require_once $configExamplePath;
+} else {
+	die('Missing backend/config.php (and config.example.php)');
+}
+?>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
