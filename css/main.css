@@ -298,13 +298,13 @@ img {
 }
 
 nav {
-  border: 3px solid green;
+  border: 3px solid rgb(2, 84, 2);
   padding: 16px;
-  background-color: lightgreen;
+  background-color: rgb(2, 200, 2);
 
   /* Mooier & moderner */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   border-radius: 8px;
   font-weight: 600;
