@@ -26,6 +26,10 @@ html {
  *
  * Customize the background color to match your design.
  */
+ /* Nav bar */
+
+
+
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -288,3 +292,40 @@ label{
   }
 }
 
+img {
+  align-items: center;
+  width: 15px;
+}
+
+nav {
+  border: 3px solid green;
+  padding: 16px;
+  background-color: lightgreen;
+
+  /* Mooier & moderner */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: 0.2s ease;
+}
+
+nav a:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
