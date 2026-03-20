@@ -20,11 +20,11 @@ if (file_exists($configPath)) {
 <nav>
 <a href="inlog.php">Home</a>
 <a href="statestiek.php">Statestieken</a>
-<a href="planbord.php">Planbord</a>
+<a href="create.php">Planbord</a>
 </nav>
 </div>
 
-<h1>Planning app </h1>
+
 
 
 <!-- hier komt informatie over de website en waarvoor hij bedoelt is -->

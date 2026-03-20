@@ -292,10 +292,7 @@ label{
   }
 }
 
-img {
-  align-items: center;
-  width: 15px;
-}
+
 
 nav {
   border: 3px solid rgb(2, 84, 2);
@@ -328,4 +325,10 @@ nav a {
 
 nav a:hover {
   background: rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;  /* horizontaal */
+  align-items: center;      /* verticaal */
 }

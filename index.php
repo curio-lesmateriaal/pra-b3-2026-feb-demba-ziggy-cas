@@ -12,14 +12,14 @@
 
 <body>
 
-    <div class="container">
-
-
-    </div>
-    <a href="create.php">create</a>
-    <?php
-    
-
+<div class="logo">
+    <nav>
+        <img src="img/logo-big-v2.png" alt="">
+        <ul>
+         
+        </ul>
+    </nav>
+</div>
      ?>
 </body>
 
