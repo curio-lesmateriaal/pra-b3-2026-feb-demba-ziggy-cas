@@ -1,32 +1,417 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+/* Takenlijst Theme - Green, Yellow, Pink, Black */
 
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
- /* Nav bar */
+html {
+  color: #1a1a1a;
+  font-size: 1em;
+  line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f5f5f5 0%, #f0f0f0 100%);
+  color: #1a1a1a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+/* Header & Navigation */
+header, nav {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+nav a, nav li {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background: #22c55e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+/* Main Content */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  padding: 1rem 0;
+}
+
+.logo nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+h1, h2, h3 {
+  color: #1a1a1a;
+  margin: 1.5rem 0 0.5rem 0;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #22c55e 0%, #fbbf24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  border-left: 4px solid #22c55e;
+  padding-left: 1rem;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 1rem 0;
+}
+
+table th {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+table tr {
+  transition: all 0.2s ease;
+}
+
+table tr:hover {
+  background: #f9fafb;
+  box-shadow: inset 0 0 10px rgba(34, 197, 94, 0.1);
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+table a {
+  color: #22c55e;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 1rem;
+  transition: all 0.2s ease;
+}
+
+table a:hover {
+  color: #16a34a;
+  text-decoration: underline;
+}
+
+/* Status Badges */
+.status-todo {
+  background: #fbbf24;
+  color: #1a1a1a;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-in progress {
+  background: #ec4899;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-done {
+  background: #22c55e;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Forms */
+form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+label {
+  display: block;
+  margin: 1.5rem 0 0.5rem 0;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #22c55e;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
+  background: #f9fafb;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Buttons */
+button,
+.btn {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+button:hover,
+.btn:hover {
+  background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(34, 197, 94, 0.3);
+}
+
+button:active,
+.btn:active {
+  transform: translateY(0);
+}
+
+button[type="submit"] {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+}
+
+.btn-delete {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.btn-delete:hover {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.3);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, #db2777 0%, #be185d 100%);
+  box-shadow: 0 6px 20px rgba(236, 72, 153, 0.3);
+}
+
+/* Links */
+a {
+  color: #22c55e;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #16a34a;
+  text-decoration: underline;
+}
+
+/* Messages */
+.message,
+p[style*="color: green"],
+p[style*="color: red"] {
+  padding: 1rem;
+  border-radius: 6px;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+
+p[style*="color: green"] {
+  background: #dcfce7;
+  color: #15803d;
+  border-left: 4px solid #22c55e;
+}
+
+p[style*="color: red"] {
+  background: #fee2e2;
+  color: #991b1b;
+  border-left: 4px solid #ef4444;
+}
+
+/* Detail View */
+.detail-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 1.5rem 0;
+}
+
+.detail-section p {
+  margin: 1rem 0;
+  line-height: 1.8;
+}
+
+.detail-section strong {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e5e7eb;
+}
+
+.actions a {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  color: white;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.actions a:hover {
+  background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(34, 197, 94, 0.3);
+  text-decoration: none;
+}
+
+.actions a[href*="delete"] {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.actions a[href*="delete"]:hover {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  table {
+    font-size: 0.9rem;
+  }
+  
+  table th, table td {
+    padding: 0.75rem 0.5rem;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+  
+  form {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .actions {
+    flex-direction: column;
+  }
+  
+  .actions a {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 
 

@@ -16,15 +16,19 @@ if (file_exists($configPath)) {
 <link rel="stylesheet" href="<?php echo $base_url; ?>/css/normalize.css">
 <link rel="stylesheet" href="<?php echo $base_url; ?>/css/main.css">
 
-</div class ="nav">
-<nav>
-<a href="inlog.php">Home</a>
-<a href="statestiek.php">Statestieken</a>
-<a href="create.php">Planbord</a>
-</nav>
-</div>
-
-
-
+<header>
+	<nav>
+		<div style="display: flex; align-items: center; gap: 1rem;">
+			<img src="img/logo-big-v2.png" alt="Logo" style="max-width: 60px; height: auto;">
+			<div style="font-size: 1.5rem; font-weight: bold; background: linear-gradient(135deg, #22c55e 0%, #fbbf24 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+				📋 Takenlijst App
+			</div>
+		</div>
+		<ul>
+			<li><a href="index.php">🏠 Home</a></li>
+			<li><a href="create.php">✨ Nieuwe Taak</a></li>
+		</ul>
+	</nav>
+</header>
 
 <!-- hier komt informatie over de website en waarvoor hij bedoelt is -->
