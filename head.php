@@ -18,7 +18,7 @@ if (file_exists($configPath)) {
 
 </div class ="nav">
 <nav>
-<a href="inlog.php">Home</a>
+<a href="index.php">Home</a>
 <a href="statestiek.php">Statestieken</a>
 <a href="create.php">Planbord</a>
 </nav>
